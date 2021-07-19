@@ -22,6 +22,13 @@ import request from 'request';
  * well with pages that require JavaScript.
  */
 export const botUserAgents = [
+  // AdSense is technologically backwards and still doesn't handle JS
+  'google',
+  // Not expected from a tech company like Discord, but Discordbot is likewise backwards
+  'discord',
+  // Not sure but doing it for good measure
+  'slurp',
+  'DuckDuckBot',
   'Baiduspider',
   'bingbot',
   'Embedly',
